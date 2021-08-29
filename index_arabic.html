@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>مرحبا بكم في موقع "عطلتي"</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/beach-icon.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom:4px solid brown;background-image: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sand-beach-wallpaper-design-template-22b13d5b0e8609794b09fb1e144a46cc_screen.jpg?ts=1615481774'); background-repeat: no-repeat;  background-size: cover;">
+          <div class="container px-4 px-lg-5">
+            <img src="images/beach-icon.png" width="50px" style="margin-right:20px" alt="">
+            <ul class="navbar-brand">
+              <a class="navbar-brand" href="index_arabic.html">موقع عطلتي</a>
+            </ul>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                 
+                
+                    <ul class="d-flex navbarnav" style="list-style: none; ">
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><abbr title="اضغط هنا لتغيير الصفحة إلى اللغة الانجليزيه">EN</abbr></a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="about_arabic.html">نبذه عن الموقع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_arabic.html">اتصل بنا</a></li>
+                  </ul>
+                 
+              </div>
+          </div>
+      </nav>
+        <!-- Header-->
+        <header class="py-5" style="background-image: url('https://t4.ftcdn.net/jpg/03/11/38/67/360_F_311386731_Zl4dMbUUlQwRI91V8WlXNSKn2mzuY8yx.jpg'); background-repeat:no-repeat; background-position: center; background-size: cover; ">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder fontfamil">إنه أفضل وقت للعطلة</h1>
+                    <p class="lead fw-normal text-white-50 mb-0 fontfamil">نحن لسنا الوحيدين ولكننا الأفضل</p>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="container hide " id="checkOutList" dir="rtl">
+            <main>
+              <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="images/beach-icon.png" alt="" width="72" >
+                <h2>Checkout form</h2>
+                <p class="lead"></p>
+              </div>
+          
+              <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                  <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="">تفاصيل الحجز</span>
+                    <span class="badge bg-primary rounded-pill"></span>
+                  </h4>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div style="width:130px">
+                        <h6 class="my-0">سعر البالغين</h6>
+                        <small class="text-muted" id="placeName">Brief description</small>
+                      </div>
+                      <span>$<span id="pricePerPerson"></span><span style="font-weight: 700;">&#215</span><span id="howManyPersons"></span></span>
+                      <span class="text-muted">$<span class="text-muted" id="priceForTotalAdults">0</span></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">سعر الاطفال</h6>
+                        <small class="text-muted" id="childPriceId"></small>
+                      </div>
+                      <span class="hide" id="operationForChildren">$<span id="pricePerChild"></span><span style="font-weight: 700;">&#215</span><span id="howManyChildren"></span></span>
+                      <span class="text-muted">$<span class="text-muted" id="priceForTotalChildren">0</span></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">تاريخ الوصول</h6>
+                        <small class="text-muted"></small>
+                      </div>
+                      <span class="text-muted" id="checkInList"></span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">تاريخ الخروج</h6>
+                        <small class="text-muted"></small>
+                      </div>
+                      <span class="text-muted" id="checkoutdatum"></span>
+                    </li>
+                    
+                   
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                      <div class="text-success">
+                        <h6 class="my-0">كود قسيمة التخفيض</h6>
+                        <small></small>
+                      </div>
+                      <span class="text-success">−$<span id="discount"></span></span> 
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <span>المجموع (بالدولار الامريكي)</span>
+                      <strong>$<span id="totalprice">0</span></strong>
+                    </li>
+                  </ul>
+          
+                  <form class="card p-2">
+                    <div class="input-group flex-row-reverse">
+                      <input type="text" class="form-control" id="inputFordiscountCode" placeholder="Promo code">
+                      <button type="submit" class="btn btn-secondary" id="redeem" onclick="return checkForRedeem();">احصل على التخفيض</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                  <h4 class="mb-3">تفاصيل المستلم</h4>
+                  <div class="error" id="error"></div>
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">الأسم الأول :</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">اللقب :</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">البريد الألكتروني :</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text"><i class="fas fa-at"></i></span>
+                          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Your email is required.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="telephone" class="form-label">رقم الهاتف:</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+                          <input type="text" class="form-control" id="telephone" placeholder="Tel: xx-xxxx-xxxx" required>
+                        <div class="invalid-feedback">
+                            Your telephone is required.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">العنوان:</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text"><i class="fas fa-home"></i></span>
+                          <input type="text" class="form-control" id="address" placeholder="example: str: new street no:3" required>
+                        <div class="invalid-feedback">
+                            Your email is required.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!-- <div class="col-12">
+                        <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                      </div> -->
+          
+                      <div class="col-md-5">
+                        <label for="numberOfAdults" class="form-label">اختر عدد البالغين :</label>
+                        <select class="form-select numberOfAdults11"  onchange="numberOfAdults1(this.value)" id="numberOfAdults" required>
+                          <option class="options" value="0">Choose...</option>
+                          <option class="options" value="1">1</option>
+                          <option class="options" value="2">2</option>
+                          <option class="options" value="3">3</option>
+                          <option class="options" value="4">4</option>
+                          <option class="options" value="5">5</option>
+                          <option class="options" value="6">6</option>
+                          <option class="options" value="7">7</option>
+                          <option class="options" value="8">8</option>
+                          <option class="options" value="9">9</option>
+                          <option class="options" value="10">10</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid number of adults.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="numberOfChildren" class="form-label">أختر عدد الأطفال :</label>
+                        <select class="form-select" id="numberOfChildren" onchange="numberOfChildren1(this.value)" required>
+                          <option value="0">Choose...</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please provide a valid number of children.
+                        </div>
+                      </div>
+          
+
+                      <div class="col-md-5">
+                        <label for="checkInDatum" class="form-label">أختر تاريخ الوصل :</label><br>
+                        <input type="date" name="" id="checkInDatum" onchange="checkInDatumselect()">
+                        <div class="invalid-feedback">
+                          Please select a check-in date.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="checkOutDatum" class="form-label">أختر تاريخ المغادره :</label>
+                        <input type="date" name="" id="outCheckdate" onchange="checkOutFunction()">
+                        <div class="invalid-feedback">
+                          Please select a check-out date.
+                        </div>
+                      </div>
+                  
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-address">
+                      <label class="form-check-label" for="same-address">عنوان الشحن هو نفسه عنوان إرسال الفواتير الخاص بي</label>
+                    </div>
+          
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="save-info">
+                      <label class="form-check-label" for="save-info">احفظ هذه المعلومات في المرة القادمة</label>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <h4 class="mb-3">طريقة الدفع</h4>
+          
+                    <div class="my-3">
+                      <div class="form-check">
+                        <input id="credit" onclick="checkedfunc()" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                        <label class="form-check-label" for="credit">Credit card - الكردت كارد</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="debit" onclick="checkedfunc()" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="debit">الكارد البنكي</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="paypal" onclick="checkedfunc()" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label"  for="paypal">PayPal - البي بال</label>
+                      </div>
+                    </div>
+          
+                    <div class="row gy-3">
+                      <div class="col-md-6">
+                        <label for="cc-name" class="form-label" id="cc-name">الأسم على بطاقه البنك</label>
+                        <input type="text" class="form-control" id="cc-nameOne" placeholder="" required>
+                        <small class="text-muted" id="descriptiontxt">أملىء الأسم كما هو موجود على البطاقه البنكيه</small>
+                        <div class="invalid-feedback">
+                          Name on card is required
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="cc-number" class="form-label" >Credit card number - رقم الكردت كارز</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Credit card number is required
+                        </div>
+                      </div>
+
+                      
+          
+                      <div class="col-md-3 " id="expirationSection">
+                        <label for="cc-expiration" class="form-label">تاريخ الصلاحيه</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Expiration date required
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3" id="CVVSection">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Security code required
+                        </div>
+                      </div>
+
+                   
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <button class="w-100 btn btn-primary btn-lg" id="checkOutbtn" type="submit">قم بتثبت الدفع</button>
+                  </form>
+                </div>
+              </div>
+            </main>
+          
+        
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Section-->
+        <section class="" >
+            <div class="container px-4 px-lg-5 py-5" id="containerTop" >
+              <div class="border-radius" id="searchDiv"><abbr title="حقل البحث هذا للبحث عن طريق اسم الدولة. على سبيل المثال: مصر" style="margin-right:10px;"><i class="fas fa-info-circle"></i></abbr><input id="searchfield" type="search" name="" id=""><label class="colorandfont" style="margin-left:10px" for="">بحث</label></div>
+
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="container">
+
+                </div>
+
+            
+      
+            </div>
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 " id="detailsSection">
+                </div>
+            </section>
+        </section>
+
+
+
+
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Made with ❤ by Mohammed Al-Issa 2021</p></div>
+        </footer>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/script_arabic.js"></script>
+    </body>
+</html>
